@@ -1832,9 +1832,9 @@ input, select, textarea {
 
 /* Section/Article */
 
-	section.special, article.special {
+	/*section.special, article.special {
 		text-align: center;
-	}
+	}*/
 
 	header p {
 		color: #A5A5a5;
