@@ -1833,7 +1833,7 @@ input, select, textarea {
 /* Section/Article */
 
 	/*section.special, article.special {
-		text-align: center;
+		text-align: center;     this was removed to uncenter Confirmed Speakers
 	}*/
 
 	header p {
