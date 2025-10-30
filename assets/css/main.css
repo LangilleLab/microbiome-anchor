@@ -260,17 +260,24 @@ input, select, textarea {
 				/* Confirmed speakers font control below */
 
 				blockquote.testimonial cite .name {
-					color: #7f7f7f;
+					color: #ffffff;
 					display: block;
 					font-style: normal;
 					font-size: 1.6em;
 				}
 
 				blockquote.testimonial cite .title {
-					color: #A5A5a5;
+					color: #bebcbc;
 					display: block;
 					font-style: normal;
-					font-size: 1.35em
+					font-size: 1.2em
+				}
+
+				blockquote.testimonial cite .location {
+					color: #bebcbc;
+					display: block;
+					font-style: normal;
+					font-size: 1.2em
 				}
 
 	code {
@@ -3028,12 +3035,16 @@ input, select, textarea {
 					border-top-color: rgba(0, 0, 0, 0.25);
 				}
 
+
+
+			/* speaker text color controlled here*/
+				
 			.wrapper.style4 blockquote.testimonial cite .name {
 				color: #ffffff;
 			}
 
 			.wrapper.style4 blockquote.testimonial cite .title {
-				color: #cccbd4;
+				color: #bebcbc;
 			}
 
 			.wrapper.style4 .tree:before {
