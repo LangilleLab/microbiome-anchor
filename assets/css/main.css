@@ -126,13 +126,15 @@ input, select, textarea {
 		line-height: 1.65em;
 	}
 
+	/* for changing underline behaviour of links*/
+
 	a {
 		color: #7bceba;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 		a:hover {
-			text-decoration: none;
+			text-decoration: underline;
 		}
 
 	strong, b {
@@ -254,18 +256,21 @@ input, select, textarea {
 					margin: 0 0 1em 0;
 				}
 
+
+				/* Confirmed speakers font control below */
+
 				blockquote.testimonial cite .name {
 					color: #7f7f7f;
 					display: block;
 					font-style: normal;
-					font-size: 1.25em;
+					font-size: 1.6em;
 				}
 
 				blockquote.testimonial cite .title {
 					color: #A5A5a5;
 					display: block;
 					font-style: normal;
-					font-size: 1.15em
+					font-size: 1.35em
 				}
 
 	code {
