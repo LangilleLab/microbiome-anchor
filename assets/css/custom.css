@@ -1,0 +1,68 @@
+/* --- Sponsors Section Custom Styles --- */
+
+/* Add vertical space at the bottom of the sponsors section */
+#sponsors {
+    padding-bottom: 5rem; 
+}
+
+/* 1. Layout & Centering */
+#sponsors .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end; /* Vertically aligns logos of different heights */
+    text-align: center;
+}
+
+/* 2. Container for the link and image */
+.sponsor-link {
+    display: inline-block;
+    margin: 0 auto;
+    border: none !important;
+    background: none !important;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.sponsor-link:hover {
+    opacity: 0.7;
+}
+
+/* 3. Image Styling & Sizing */
+.sponsor-image {
+    display: block;
+    margin: 0 auto;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    
+    /* CONTROL LOGO SIZE HERE */
+    max-width: 250px; 
+}
+
+.sponsor-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* 4. Mobile Responsiveness */
+@media screen and (max-width: 736px) {
+    /* Ensures logos center on mobile when they stack */
+    #sponsors .col-12-medium {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem; /* Spacing between stacked logos */
+    }
+    
+    #sponsors .col-12-medium:last-child {
+        margin-bottom: 0;
+    }
+
+    .sponsor-image {
+        max-width: 200px; /* Slightly smaller logos on phones */
+    }
+}
