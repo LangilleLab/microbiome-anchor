@@ -66,3 +66,192 @@
         max-width: 200px; /* Slightly smaller logos on phones */
     }
 }
+
+/* --- Program Page Tabs & Schedule --- */
+
+.program-header {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #0b3d91; /* Matches your theme blue */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem
+}
+
+.tabs-container {
+    margin: 2rem 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.tabs-header {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #f4f4f4;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.tab-link {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    color: #555;
+    border-right: 1px solid #e5e5e5;
+    font-size: 1.1rem;
+}
+
+.tab-link:last-child { border-right: none; }
+
+.tab-link.active {
+    background: #fff;
+    color: #0b3d91; /* Matches your theme blue */
+    border-bottom: 3px solid #0b3d91;
+}
+
+.tab-content {
+    display: none;
+    padding: 2rem;
+    animation: fadeIn 0.4s ease;
+}
+
+.tab-content.active { display: block; }
+
+/* Schedule Rows */
+.schedule-row {
+    display: flex;
+    padding: 0.3rem 0;
+    align-items: flex-start;
+}
+
+.schedule-row-heading {
+    display: flex;
+    padding: 0.3rem 0;
+    align-items: flex-start;
+}
+
+.schedule-row:last-child { border-bottom: none; }
+
+.schedule-row.highlight { background: #f9fbff; margin: 0 -2rem; padding: 1.5rem 2rem; }
+
+.time {
+    flex: 0 0 150px;
+    font-weight: 400;
+    color: #0b3d91;
+    font-size: 1.1rem;
+}
+
+.time-heading {
+    flex: 0 0 150px;
+    font-weight: 400;
+    color: #0b3d91;
+    font-size: 1.1rem;
+}
+
+.session h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: #222;
+    text-transform: none;
+    
+}
+
+.session p { 
+    margin: 0 0 1rem 0; 
+    color: #666; 
+    text-transform: none;
+    font-size: 1.1rem;
+}
+
+.session-heading h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: #222;
+    text-transform: none;
+}
+
+.session-heading p { 
+    margin: 0 0 1rem 0; 
+    color: #666; 
+    text-transform: none;
+    font-size: 1.1rem;
+}
+
+.speaker-name {
+    display: inline-flex;
+    align-items: center;
+}
+
+.speaker-name::after {
+    content: "";
+    display: inline-block;
+    width: 2px;           /* Thickness of the bar */
+    height: 1.1em;        /* Height of the bar relative to text */
+    background-color: #0b3d91; /* Your theme blue */
+    margin: 0 12px;       /* Space on the left and right of the bar */
+    vertical-align: middle;
+    opacity: 0.7;         /* Makes it slightly subtle */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 736px) {
+    .schedule-row { flex-direction: column; }
+    .schedule-row-heading { flex-direction: column; }
+    .time { margin-bottom: 0.5rem; }
+    .time-heading { margin-bottom: 0.5rem; }
+    .tabs-header { flex-direction: column; }
+    .tab-link { border-right: none; border-bottom: 1px solid #eee; }
+}
+
+/* Mobile Optimization for Program Schedule */
+@media screen and (max-width: 736px) {
+    .schedule-row, 
+    .schedule-row-heading {
+        flex-direction: column; /* Stacks time on top of session */
+        padding: 1rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .time, 
+    .time-heading {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: 0.25rem;
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+
+    .session, 
+    .session-heading {
+        width: 100%;
+    }
+
+    /* Adjusting the tabs for mobile so they don't squash */
+    .tabs-header {
+        flex-direction: column;
+    }
+
+    .tab-link {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding: 1rem;
+    }
+
+    /* Ensure the highlighted rows don't cause horizontal scrolling */
+    .schedule-row.highlight {
+        margin: 0;
+        padding: 1rem;
+    }
+}
