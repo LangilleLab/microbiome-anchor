@@ -255,3 +255,33 @@
         padding: 1rem;
     }
 }
+
+.bio h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: #222;
+    text-transform: none;
+    
+}
+
+.bio p { 
+    margin: 0 0 1rem 0; 
+    color: #666; 
+    text-transform: none;
+    font-size: 1.1rem;
+}
+
+.abstract h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: #222;
+    text-transform: none;
+    
+}
+
+.abstract p { 
+    margin: 0 0 1rem 0; 
+    color: #666; 
+    text-transform: none;
+    font-size: 1.1rem;
+}
