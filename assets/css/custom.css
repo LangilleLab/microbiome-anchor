@@ -285,3 +285,11 @@
     text-transform: none;
     font-size: 1.1rem;
 }
+
+.abstract {
+    scroll-margin-top: 60px; /* Adjust based on your header height */
+}
+
+.affiliations p {
+    font-size: 0.9rem;  /* adjust this value as needed */
+}
