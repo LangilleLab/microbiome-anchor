@@ -127,7 +127,7 @@
 /* Schedule Rows */
 .schedule-row {
     display: flex;
-    padding: 0.3rem 0;
+    padding: 0rem 0;
     align-items: flex-start;
 }
 
@@ -162,6 +162,77 @@
     text-transform: none;
     
 }
+
+/* ===== Talk Type Styling ===== */
+
+.session {
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.session::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    width: 4px;
+    height: calc(100% - 0.4rem);
+    border-radius: 4px;
+    background: #ccc;
+}
+
+/* Keynote */
+
+.keynote .session::before {
+    background: #7b2cbf;
+}
+
+.talk-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+.keynote .talk-label {
+    color: #7b2cbf;
+}
+
+/* Plenary Talk */
+
+.plenary-talk .session::before {
+    background: #10b981;
+}
+
+.plenary-talk .talk-label {
+    color: #10b981;
+}
+
+/* Sponsor Talk */
+
+.sponsor-talk .session::before {
+    background: #d31d2c;
+}
+
+.sponsor-talk .talk-label {
+    color: #d31d2c;
+}
+
+/* Short Talk */
+
+.short-talk .session::before {
+    background: #2563eb;
+}
+
+.short-talk .talk-label {
+    color: #2563eb;
+}
+
+
+
+
+
 
 .session p { 
     margin: 0 0 1rem 0; 
@@ -287,9 +358,30 @@
 }
 
 .abstract {
-    scroll-margin-top: 60px; /* Adjust based on your header height */
+    scroll-margin-top: 70px; /* Adjust based on your header height */
+}
+
+.bio {
+  scroll-margin-top: 70px;
 }
 
 .affiliations p {
     font-size: 0.9rem;  /* adjust this value as needed */
+}
+
+/* --- Poster Number Badge --- */
+
+.poster-badge {
+    display: inline-block;
+    background: #185FA5;
+    color: #E6F1FB;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-right: 10px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    letter-spacing: 0.03em;
 }
