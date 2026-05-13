@@ -385,3 +385,29 @@
     top: -2px;
     letter-spacing: 0.03em;
 }
+
+/* --- Bio Icon Badge --- */
+.bio-icon {
+    display: inline-block;
+    background: transparent;
+    color: #0b3d91;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0px 4px;
+    border: 1.5px solid #0b3d91;
+    border-radius: 10px;
+    text-decoration: none;
+    vertical-align: middle;
+    margin: 0 10px 0 4px;
+    margin-left: 15px;
+    position: relative;
+    top: -1px;
+    transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.bio-icon:hover {
+    background: transparent;
+    opacity: 1;
+}
