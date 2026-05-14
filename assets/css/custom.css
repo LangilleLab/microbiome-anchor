@@ -212,11 +212,11 @@
 /* Sponsor Talk */
 
 .sponsor-talk .session::before {
-    background: #d31d2c;
+    background: #8A8A8A
 }
 
 .sponsor-talk .talk-label {
-    color: #d31d2c;
+    color: #8A8A8A
 }
 
 /* Short Talk */
