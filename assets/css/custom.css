@@ -160,8 +160,12 @@
     font-size: 1rem;
     color: #222;
     text-transform: none;
-    
 }
+
+.session h3 a {
+		color: #7bceba;
+		text-decoration: none;
+	}
 
 /* ===== Talk Type Styling ===== */
 
@@ -188,7 +192,7 @@
 }
 
 .talk-label {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -229,7 +233,15 @@
     color: #2563eb;
 }
 
+/* Sponsor Talk */
 
+.flash-talk .session::before {
+    background: #4094b0
+}
+
+.flash-talk .talk-label {
+    color: #4094b0
+}
 
 
 
@@ -247,6 +259,7 @@
     color: #222;
     text-transform: none;
 }
+
 
 .session-heading p { 
     margin: 0 0 1rem 0; 
@@ -365,6 +378,10 @@
   scroll-margin-top: 70px;
 }
 
+.program-header {
+  scroll-margin-top: 70px;
+}
+
 .affiliations p {
     font-size: 0.9rem;  /* adjust this value as needed */
 }
@@ -410,4 +427,55 @@
 .bio-icon:hover {
     background: transparent;
     opacity: 1;
+}
+
+/* --- Program Footer Partners --- */
+
+.program-partners {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+.program-partners-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: nowrap;
+}
+
+.partner-link {
+    display: inline-block;
+    border: none !important;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.partner-link:hover {
+    opacity: 0.8;
+}
+
+.partner-image {
+    display: block;
+    max-width: 120px;
+}
+
+.partner-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile */
+@media screen and (max-width: 736px) {
+    .program-partners-row {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .partner-image {
+        max-width: 90px;
+    }
 }
