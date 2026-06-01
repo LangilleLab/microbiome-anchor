@@ -243,7 +243,15 @@
     color: #4094b0
 }
 
+/* Session Chair */
 
+.chair .session::before {
+    background: #e0e0e0;
+}
+
+.chair .talk-label {
+    color: #e0e0e0;
+}
 
 
 .session p { 
@@ -271,6 +279,21 @@
 .speaker-name {
     display: inline-flex;
     align-items: center;
+}
+
+.no-bar.session::before {
+    display: none;
+}
+
+.no-bar.session p {
+    
+    color: #222;
+}
+
+.session-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 0.75rem 0;
 }
 
 .speaker-name::after {
